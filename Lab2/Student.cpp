@@ -1,6 +1,4 @@
 ﻿#include "pch.h"
-
-
 #include "Student.h"
 
 using std::cout;
@@ -39,10 +37,6 @@ string Student::GetFirstName() const
 string Student::GetLastName() const
 {
 	return lastName;
-}
-
-void Student::Dishonor()
-{
 }
 
 string Student::Introduce()
