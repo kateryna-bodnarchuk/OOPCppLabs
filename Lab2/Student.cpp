@@ -56,8 +56,8 @@ string Student::GenderTitle(Gender gender)
 {
 	switch (gender)
 	{
-	case Male: return "Man";
-	case Female: return "Girl";
+	case Male: return "Male";
+	case Female: return "Female";
 	default: throw std::exception();
 	}
 }
