@@ -5,7 +5,7 @@
 class CourseOop : public Course
 {
 public:
-	CourseOop(Teacher teacher);
+	CourseOop(Teacher & teacher);
 	string GetName();
 	~CourseOop();
 };

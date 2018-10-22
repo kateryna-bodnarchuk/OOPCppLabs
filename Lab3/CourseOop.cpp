@@ -2,7 +2,7 @@
 #include "CourseOop.h"
 
 
-CourseOop::CourseOop(Teacher teacher)
+CourseOop::CourseOop(Teacher & teacher)
 	: Course(teacher)
 {
 }

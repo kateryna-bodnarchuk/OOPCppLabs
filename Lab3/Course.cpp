@@ -2,7 +2,7 @@
 #include "Course.h"
 
 
-Course::Course(Teacher teacher) 
+Course::Course(Teacher & teacher) 
 	: teacher(teacher)
 {
 	students;

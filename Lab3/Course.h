@@ -7,7 +7,7 @@ using std::vector;
 class Course
 {
 public:
-	Course(Teacher teacher);
+	Course(Teacher & teacher);
 	~Course();
 	virtual string GetName() = 0;
 	Teacher GetTeacher();
