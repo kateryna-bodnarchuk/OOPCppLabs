@@ -6,7 +6,7 @@
 class RepositoryRecord
 {
 public:
-	RepositoryRecord(Student student, Course course, int mark);
+	RepositoryRecord(Student & student, Course & course, int mark);
 	string GetStudent();
 	string GetCourse();
 	int GetMark();
@@ -14,7 +14,7 @@ public:
 	~RepositoryRecord();
 private:
 	Student student;
-	Course course;
+	Course & course;
 	int mark;
 };
 

@@ -2,19 +2,14 @@
 #include "Course.h"
 
 
-Course::Course(string name, Teacher teacher) : teacher(teacher)
+Course::Course(Teacher teacher) 
+	: teacher(teacher)
 {
-	this->name = name;
 	students;
 }
 
 Course::~Course()
 {
-}
-
-string Course::GetName()
-{
-	return name;
 }
 
 Teacher Course::GetTeacher()

@@ -2,7 +2,7 @@
 #include "RepositoryRecord.h"
 
 
-RepositoryRecord::RepositoryRecord(Student student, Course course, int mark)
+RepositoryRecord::RepositoryRecord(Student & student, Course & course, int mark)
 	: student(student), course(course), mark(mark)
 {
 }

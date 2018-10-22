@@ -8,6 +8,7 @@ class Teacher
 {
 public:
 	Teacher(string & firstName, string & lastName);
+	Teacher(const Teacher & other);
 	string GetFirstName();
 	string GetLastName();
 	~Teacher();

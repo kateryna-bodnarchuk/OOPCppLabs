@@ -7,14 +7,13 @@ using std::vector;
 class Course
 {
 public:
-	Course(string name, Teacher teacher);
+	Course(Teacher teacher);
 	~Course();
-	string GetName();
+	virtual string GetName() = 0;
 	Teacher GetTeacher();
 	vector<Student> const & GetStudents();
 	bool AddStudent(Student& newStudent);
 private:
-	string name;
 	Teacher teacher;
 	vector<Student> students;
 };

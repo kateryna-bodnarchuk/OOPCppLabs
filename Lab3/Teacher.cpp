@@ -9,6 +9,11 @@ Teacher::Teacher(string & firstName, string & lastName)
 	this->lastName = lastName;
 }
 
+Teacher::Teacher(const Teacher & other) {
+	this->firstName = other.firstName;
+	this->lastName = other.lastName;
+}
+
 string Teacher::GetFirstName()
 {
 	return firstName;

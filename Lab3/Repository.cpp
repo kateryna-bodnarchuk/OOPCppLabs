@@ -6,7 +6,7 @@ Repository::Repository()
 {
 }
 
-void Repository::Add(Student student, Course course, int mark)
+void Repository::Add(Student & student, Course & course, int mark)
 {
 	records.push_back(RepositoryRecord(student, course, mark));
 }
