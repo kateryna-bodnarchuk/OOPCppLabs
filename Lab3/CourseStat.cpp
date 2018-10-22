@@ -2,7 +2,7 @@
 #include "CourseStat.h"
 
 
-CourseStat::CourseStat(Teacher teacher) : Course(teacher)
+CourseStat::CourseStat(Teacher & teacher) : Course(teacher)
 {
 }
 

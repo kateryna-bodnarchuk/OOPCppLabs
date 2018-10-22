@@ -5,7 +5,7 @@
 class CourseStat : public Course
 {
 public:
-	CourseStat(Teacher teacher);
+	CourseStat(Teacher & teacher);
 	string GetName();
 	~CourseStat();
 };

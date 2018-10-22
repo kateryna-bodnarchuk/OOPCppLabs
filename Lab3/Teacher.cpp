@@ -3,7 +3,7 @@
 
 using std::string;
 
-Teacher::Teacher(string & firstName, string & lastName)
+Teacher::Teacher(const string & firstName, const string & lastName)
 {
 	this->firstName = firstName;
 	this->lastName = lastName;

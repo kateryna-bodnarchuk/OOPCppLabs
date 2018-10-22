@@ -3,14 +3,7 @@
 
 using std::cout;
 
-Student::Student(char const * firstName, char const * lastName, int age, Gender gender) {
-	this->firstName = firstName;
-	this->lastName = lastName;
-	this->age = age;
-	this->gender = gender;
-}
-
-Student::Student(string & firstName, string & lastName, int age, Gender gender)
+Student::Student(const string & firstName, const string & lastName, int age, Gender gender)
 {
 	this->firstName = firstName;
 	this->lastName = lastName;

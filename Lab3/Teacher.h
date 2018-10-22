@@ -7,7 +7,7 @@ using std::string;
 class Teacher
 {
 public:
-	Teacher(string & firstName, string & lastName);
+	Teacher(const string & firstName, const string & lastName);
 	Teacher(const Teacher & other);
 	string GetFirstName();
 	string GetLastName();
