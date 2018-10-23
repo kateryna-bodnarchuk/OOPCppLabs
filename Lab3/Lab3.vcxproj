@@ -152,19 +152,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Course.h" />
+    <ClInclude Include="CourseDisko.h" />
     <ClInclude Include="CourseOop.h" />
     <ClInclude Include="CourseStat.h" />
     <ClInclude Include="Gender.h" />
+    <ClInclude Include="KnowledgeException.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Repository.h" />
     <ClInclude Include="RepositoryRecord.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentHead.h" />
     <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp" />
+    <ClCompile Include="CourseDisko.cpp" />
     <ClCompile Include="CourseOop.cpp" />
     <ClCompile Include="CourseStat.cpp" />
+    <ClCompile Include="KnowledgeException.cpp" />
     <ClCompile Include="Lab3.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -175,6 +180,7 @@
     <ClCompile Include="Repository.cpp" />
     <ClCompile Include="RepositoryRecord.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="StudentHead.cpp" />
     <ClCompile Include="Teacher.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

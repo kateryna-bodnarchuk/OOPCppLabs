@@ -2,7 +2,7 @@
 #include "Course.h"
 
 
-Course::Course(Teacher & teacher) 
+Course::Course(const Teacher & teacher) 
 	: teacher(teacher)
 {
 	students;
@@ -17,7 +17,7 @@ Teacher Course::GetTeacher()
 	return teacher;
 }
 
-vector<Student> const & Course::GetStudents()
+vector<Student*> const & Course::GetStudents()
 {
 	return students;
 }
@@ -27,11 +27,11 @@ bool StudentNamesEqual(Student & a, Student & b)
 	return a.GetFirstName() == b.GetFirstName() && a.GetLastName() == b.GetLastName();
 }
 
-bool Course::AddStudent(Student & newStudent)
+bool Course::AddStudent(Student* newStudent)
 {
 	for (auto existingStudent : students)
 	{
-		if (StudentNamesEqual(existingStudent, newStudent))
+		if (StudentNamesEqual(*existingStudent, *newStudent))
 		{
 			return false;
 		}

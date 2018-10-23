@@ -3,12 +3,13 @@
 
 using std::cout;
 
-Student::Student(const string & firstName, const string & lastName, int age, Gender gender)
+Student::Student(const string & firstName, const string & lastName, int age, Gender gender) :
+	firstName(firstName),
+	lastName(lastName),
+	gender(gender),
+	age(age),
+	head()
 {
-	this->firstName = firstName;
-	this->lastName = lastName;
-	this->age = age;
-	this->gender = gender;
 }
 
 void Student::SetName(string & lastName)
@@ -37,12 +38,18 @@ string Student::Introduce()
 	string nameOut = "My name is " + firstName + " " + lastName;
 	string ageOut = "I'm " + std::to_string(age) + " years old.";
 	string genderOut = "My gender is " + GenderTitle(gender) + ".";
-	return "Hello. " + nameOut + " " + ageOut + " " + genderOut;
+	string introductionHead = "Hello. " + nameOut + " " + ageOut + " " + genderOut;
+	string knowledge ="My knowledge is: " + head.GetKnowledge() + ".";
+	return introductionHead + " " + knowledge;
+}
+
+StudentHead & Student::GetHead()
+{
+	return head;
 }
 
 Student::~Student()
 {
-
 }
 
 string Student::GenderTitle(Gender gender)

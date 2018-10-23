@@ -7,6 +7,7 @@ class CourseStat : public Course
 public:
 	CourseStat(Teacher & teacher);
 	string GetName();
+	void Teach() override;
 	~CourseStat();
 };
 

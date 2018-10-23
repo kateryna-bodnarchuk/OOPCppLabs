@@ -2,6 +2,7 @@
 #include <string>
 #include "pch.h"
 #include "Gender.h"
+#include "StudentHead.h"
 
 using std::string;
 
@@ -14,6 +15,7 @@ public:
 	string GetFirstName() const;
 	string GetLastName() const;
 	string Introduce();
+	StudentHead& GetHead();
 	~Student();
 private:
 	string firstName;
@@ -21,5 +23,6 @@ private:
 	int age;
 	Gender gender;
 	string GenderTitle(Gender gender);
+	StudentHead head;
 };
 
